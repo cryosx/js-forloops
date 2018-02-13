@@ -198,6 +198,18 @@ Declare a variable named `topQuote` and assign it to a String value of your favo
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
 
+var topQuote = "I don't have one.";
+function func(str) {
+	var temp = str.split(" ");
+	var longest = "";
+	for (var i = 0; i < temp.length; i++) {
+		if (temp[i].length > longest.length) {
+			longest = temp[i];
+		}
+	}
+	return longest;
+}
+console.log(func(topQuote));
 
 
 /* 12) Puppet Master
