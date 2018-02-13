@@ -100,6 +100,16 @@ Write a for-loop that will sum up odd numbers to the `oddSum` variable. We want 
 Console.log your results.
 */
   
+  var oddSum = 0;
+  var count = 0;
+  for (var i = 1; count < 50; i++) {
+  	if (i % 2 === 1) {
+  		oddSum += i;
+  		count++;
+  	}
+  }
+
+  console.log(oddSum);
 
 /* 7) Oops There It is
 Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
